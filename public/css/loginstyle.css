@@ -1,0 +1,52 @@
+.logform{
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+.email_btn input{
+    width: 40rem;
+    padding: 2rem 2rem 2rem 2rem;
+    background: #1e202b;
+    color: white; 
+    outline:none;
+    border: none;
+    font-size: 2rem;
+    border-radius: 1rem;
+
+}
+.submit input[type="submit"]{
+    border:none;
+     background: #009ad8;
+     padding: 0 3rem;
+     border-radius: 1rem;
+     color: white;
+     font-size: 2rem;
+     padding: 1rem;
+     width: 15rem;
+}
+button{
+    border:none;
+     background: #009ad8;
+     padding: 0 3rem;
+     border-radius: 1rem;
+     color: white;
+     font-size: 2rem;
+     padding: 1rem;
+     width: 15rem;
+}
+.register{
+    color: white;
+}
+.submit{
+    display: flex;
+    justify-content:space-around;
+    margin:2rem;
+    margin-right: 0px;
+    margin-left:0px;
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+}
