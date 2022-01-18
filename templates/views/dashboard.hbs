@@ -4,7 +4,7 @@
    {{>headerlinks}}
 </head>
 <body>
-  {{>navbar}}
+  {{>navlogout}}
 
       
   <!-- main header -->
@@ -23,8 +23,8 @@
             </div>
             <div class="col-md-6 col-12 main_header_left ">
                 <p>Welcome to weather app</p>
-                <h1>I am software developer <span class="text_clr">Mern Stack developer </span> and work at MLE System<h1>
-                  <a href=" https://www.linkedin.com/in/yash-gupta-2189a511b/"><button>about me</button></a>
+                <h1>Hi <span class="text_clr">{{user}}</span> You are logged in<h1>
+                 <a href="/logout"><button> Logout</button></a>
             </div>
 
             

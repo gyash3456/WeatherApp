@@ -7,8 +7,25 @@
 <body>
   {{>navbar}}
   
-<form action="/register" method="POST" class="logform">
+<form action="/login" method="POST" class="logform">
   <h1>Login</h1>
+  <ul>
+     {{#each error}}
+      <li>{{error.message}}</li>
+      {{/each}}
+    </ul>
+
+    {{!-- <ul>
+      <% if(messages.success_msg) { %>
+      <li><%= messages.success_msg %></li>
+      <% } %>
+    </ul>
+
+    <ul>
+      <% if (messages.error) { %>
+      <li><%= messages.error %></li>
+      <% } %>
+    </ul> --}}
       <div class="email_btn">
         <input
           type="email"

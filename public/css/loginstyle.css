@@ -50,3 +50,10 @@ h1{
     text-align: center;
     font-size: 5rem;
 }
+.errors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    font-size: initial;
+}

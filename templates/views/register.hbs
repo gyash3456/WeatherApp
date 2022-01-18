@@ -6,9 +6,19 @@
 </head>
 <body>
   {{>navbar}}
-  
-<form action="/users/login" method="POST" class="logform">
+  <div class = "errors">
+  <ul >
+     {{#each emailerror}}
+  <li>{{this.message}}</li>
+{{/each}}
+    {{#each errors}}
+  <li>{{this.message}}</li>
+{{/each}}
+  </ul>
+  </div>
+<form action="/register" method="POST" class="logform">
   <h1>Register</h1>
+  
       <div class="email_btn">
         <input
           type="name"
@@ -21,15 +31,22 @@
 
       <div class="email_btn">
         <input
-          type="email"
+         {{#if cssobj1.flag}}
+          style ="border: {{cssobj1.color}}"
+          {{/if}}
+          
+          {{!-- type="email" --}}
           id="email"
           name="email"
           placeholder="Email"
-          required
-        />
+        ><label id = "datahide" style="font-size: 1rem">{{message}}</label>
       </div>
       <div  class ="email_btn">
         <input
+      
+          {{#if cssobj.flag}}
+          style ="border: {{cssobj.color}}"
+          {{/if}}
           type="password"
           id="password"
           name="password"
